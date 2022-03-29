@@ -39,7 +39,7 @@ def xbar_R_chart(D, A2):
         r.append(mi.max() - mi.min())
 
     x_barbar = np.mean(x_bar)
-    r_bar = np.mean(r) #
+    r_bar = np.mean(r) 
     UCL = x_barbar + A2 * r_bar #상한선
     LCL = x_barbar - A2 * r_bar #하한선
 
